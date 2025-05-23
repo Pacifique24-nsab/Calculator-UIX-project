@@ -35,6 +35,9 @@
             this.contactButton = new System.Windows.Forms.Button();
             this.historyButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.divisionButton = new System.Windows.Forms.Button();
+            this.digit3Button = new System.Windows.Forms.Button();
+            this.digit0Button = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.digit9Button = new System.Windows.Forms.Button();
             this.digit8Button = new System.Windows.Forms.Button();
@@ -52,13 +55,10 @@
             this.welcomingTitleLabel = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.digit0Button = new System.Windows.Forms.Button();
-            this.digit3Button = new System.Windows.Forms.Button();
-            this.divisionButton = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -109,8 +109,9 @@
             this.appDescriptionButton.Name = "appDescriptionButton";
             this.appDescriptionButton.Size = new System.Drawing.Size(233, 87);
             this.appDescriptionButton.TabIndex = 0;
-            this.appDescriptionButton.Text = "About Me";
+            this.appDescriptionButton.Text = "The Designer";
             this.appDescriptionButton.UseVisualStyleBackColor = false;
+            this.appDescriptionButton.Click += new System.EventHandler(this.appDescriptionButton_Click);
             // 
             // contactButton
             // 
@@ -123,6 +124,7 @@
             this.contactButton.TabIndex = 0;
             this.contactButton.Text = "Contact Us";
             this.contactButton.UseVisualStyleBackColor = false;
+            this.contactButton.Click += new System.EventHandler(this.contactButton_Click);
             // 
             // historyButton
             // 
@@ -135,6 +137,7 @@
             this.historyButton.TabIndex = 0;
             this.historyButton.Text = "About the App";
             this.historyButton.UseVisualStyleBackColor = false;
+            this.historyButton.Click += new System.EventHandler(this.historyButton_Click);
             // 
             // panel2
             // 
@@ -162,6 +165,45 @@
             this.panel2.Size = new System.Drawing.Size(962, 862);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // divisionButton
+            // 
+            this.divisionButton.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.divisionButton.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.divisionButton.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.divisionButton.Location = new System.Drawing.Point(604, 432);
+            this.divisionButton.Name = "divisionButton";
+            this.divisionButton.Size = new System.Drawing.Size(210, 75);
+            this.divisionButton.TabIndex = 4;
+            this.divisionButton.Text = "/";
+            this.divisionButton.UseVisualStyleBackColor = false;
+            this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
+            // 
+            // digit3Button
+            // 
+            this.digit3Button.BackColor = System.Drawing.SystemColors.InfoText;
+            this.digit3Button.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digit3Button.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.digit3Button.Location = new System.Drawing.Point(604, 140);
+            this.digit3Button.Name = "digit3Button";
+            this.digit3Button.Size = new System.Drawing.Size(210, 72);
+            this.digit3Button.TabIndex = 3;
+            this.digit3Button.Text = "3";
+            this.digit3Button.UseVisualStyleBackColor = false;
+            this.digit3Button.Click += new System.EventHandler(this.digit3Button_Click);
+            // 
+            // digit0Button
+            // 
+            this.digit0Button.BackColor = System.Drawing.SystemColors.InfoText;
+            this.digit0Button.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digit0Button.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.digit0Button.Location = new System.Drawing.Point(330, 431);
+            this.digit0Button.Name = "digit0Button";
+            this.digit0Button.Size = new System.Drawing.Size(210, 76);
+            this.digit0Button.TabIndex = 2;
+            this.digit0Button.Text = "0";
+            this.digit0Button.UseVisualStyleBackColor = false;
+            this.digit0Button.Click += new System.EventHandler(this.digit0Button_Click);
             // 
             // exitButton
             // 
@@ -379,23 +421,13 @@
             this.panel4.Size = new System.Drawing.Size(547, 500);
             this.panel4.TabIndex = 6;
             // 
-            // textBox1
+            // panel7
             // 
-            this.textBox1.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox1.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(58, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 60);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Teal;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(61, 497);
-            this.panel5.TabIndex = 7;
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel7.Location = new System.Drawing.Point(58, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(431, 72);
+            this.panel7.TabIndex = 9;
             // 
             // panel6
             // 
@@ -405,52 +437,23 @@
             this.panel6.Size = new System.Drawing.Size(61, 497);
             this.panel6.TabIndex = 8;
             // 
-            // panel7
+            // panel5
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel7.Location = new System.Drawing.Point(58, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(431, 72);
-            this.panel7.TabIndex = 9;
+            this.panel5.BackColor = System.Drawing.Color.Teal;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(61, 497);
+            this.panel5.TabIndex = 7;
             // 
-            // digit0Button
+            // textBox1
             // 
-            this.digit0Button.BackColor = System.Drawing.SystemColors.InfoText;
-            this.digit0Button.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digit0Button.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.digit0Button.Location = new System.Drawing.Point(330, 431);
-            this.digit0Button.Name = "digit0Button";
-            this.digit0Button.Size = new System.Drawing.Size(210, 76);
-            this.digit0Button.TabIndex = 2;
-            this.digit0Button.Text = "0";
-            this.digit0Button.UseVisualStyleBackColor = false;
-            this.digit0Button.Click += new System.EventHandler(this.digit0Button_Click);
-            // 
-            // digit3Button
-            // 
-            this.digit3Button.BackColor = System.Drawing.SystemColors.InfoText;
-            this.digit3Button.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digit3Button.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.digit3Button.Location = new System.Drawing.Point(604, 140);
-            this.digit3Button.Name = "digit3Button";
-            this.digit3Button.Size = new System.Drawing.Size(210, 72);
-            this.digit3Button.TabIndex = 3;
-            this.digit3Button.Text = "3";
-            this.digit3Button.UseVisualStyleBackColor = false;
-            this.digit3Button.Click += new System.EventHandler(this.digit3Button_Click);
-            // 
-            // divisionButton
-            // 
-            this.divisionButton.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.divisionButton.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divisionButton.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.divisionButton.Location = new System.Drawing.Point(604, 432);
-            this.divisionButton.Name = "divisionButton";
-            this.divisionButton.Size = new System.Drawing.Size(210, 75);
-            this.divisionButton.TabIndex = 4;
-            this.divisionButton.Text = "/";
-            this.divisionButton.UseVisualStyleBackColor = false;
-            this.divisionButton.Click += new System.EventHandler(this.divisionButton_Click);
+            this.textBox1.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox1.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(58, 231);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(431, 60);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 

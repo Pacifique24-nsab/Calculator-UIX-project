@@ -17,10 +17,17 @@ namespace Calculator_UIX__project
         double result = 0; // initialize the result to zero
         string operation = "";
         bool operationPending = false;
+
+        // connecting the form1 to form 2
+        public static Form1 instance;
+        public TextBox tb1;
         public Form1()
         {
             InitializeComponent();
+            instance = this;
+            tb1 = textBox1;
         }
+        
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -219,6 +226,24 @@ namespace Calculator_UIX__project
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void appDescriptionButton_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+        }
+
+        private void contactButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:paccynsabumukiza24@gmail.com");
+        }
+
+        private void historyButton_Click(object sender, EventArgs e)
+        {
+            Form3 form = new Form3();
+            form.Show();
 
         }
     }
