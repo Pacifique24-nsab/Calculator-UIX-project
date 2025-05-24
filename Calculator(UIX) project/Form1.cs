@@ -175,7 +175,7 @@ namespace Calculator_UIX__project
                     }
                     else
                     {
-                        textBox1.Text = "Error";
+                        textBox1.Text = "Error: you can't divide by zero";
                         return;
 
                     }

@@ -60,10 +60,12 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // digit1Button
@@ -162,7 +164,7 @@
             this.panel2.Controls.Add(this.title2Label);
             this.panel2.Location = new System.Drawing.Point(362, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(962, 862);
+            this.panel2.Size = new System.Drawing.Size(900, 862);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -210,7 +212,7 @@
             this.exitButton.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.exitButton.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.exitButton.Location = new System.Drawing.Point(728, 745);
+            this.exitButton.Location = new System.Drawing.Point(674, 773);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(211, 77);
             this.exitButton.TabIndex = 0;
@@ -265,7 +267,7 @@
             this.clearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.clearButton.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.clearButton.Location = new System.Drawing.Point(240, 673);
+            this.clearButton.Location = new System.Drawing.Point(227, 672);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(398, 79);
             this.clearButton.TabIndex = 0;
@@ -384,7 +386,7 @@
             this.panel3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(362, 15);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(962, 132);
+            this.panel3.Size = new System.Drawing.Size(900, 132);
             this.panel3.TabIndex = 4;
             // 
             // welcomingTitleLabel
@@ -400,10 +402,10 @@
             // resultLabel
             // 
             this.resultLabel.AutoSize = true;
-            this.resultLabel.Font = new System.Drawing.Font("Century Gothic", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultLabel.Location = new System.Drawing.Point(181, 108);
+            this.resultLabel.Font = new System.Drawing.Font("Century Schoolbook", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resultLabel.Location = new System.Drawing.Point(212, 149);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(195, 62);
+            this.resultLabel.Size = new System.Drawing.Size(314, 86);
             this.resultLabel.TabIndex = 5;
             this.resultLabel.Text = "Results";
             this.resultLabel.Click += new System.EventHandler(this.resultLabel_Click);
@@ -411,47 +413,48 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.textBox1);
             this.panel4.Controls.Add(this.resultLabel);
-            this.panel4.Location = new System.Drawing.Point(1344, 293);
+            this.panel4.Location = new System.Drawing.Point(1268, 259);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(547, 500);
+            this.panel4.Size = new System.Drawing.Size(660, 585);
             this.panel4.TabIndex = 6;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel7.Location = new System.Drawing.Point(58, 0);
+            this.panel7.Location = new System.Drawing.Point(73, 12);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(431, 72);
+            this.panel7.Size = new System.Drawing.Size(465, 72);
             this.panel7.TabIndex = 9;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Teal;
-            this.panel6.Location = new System.Drawing.Point(486, 0);
+            this.panel6.Location = new System.Drawing.Point(588, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(61, 497);
+            this.panel6.Size = new System.Drawing.Size(69, 585);
             this.panel6.TabIndex = 8;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Teal;
+            this.panel5.Controls.Add(this.panel7);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(61, 497);
+            this.panel5.Size = new System.Drawing.Size(67, 585);
             this.panel5.TabIndex = 7;
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox1.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(58, 231);
+            this.textBox1.Font = new System.Drawing.Font("Century Schoolbook", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(64, 265);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(431, 60);
+            this.textBox1.Size = new System.Drawing.Size(535, 56);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -465,6 +468,14 @@
             this.label1.Size = new System.Drawing.Size(322, 33);
             this.label1.TabIndex = 7;
             this.label1.Text = "designed By Pacifique";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel8.Location = new System.Drawing.Point(64, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(526, 103);
+            this.panel8.TabIndex = 9;
             // 
             // Form1
             // 
@@ -488,6 +499,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -527,6 +539,7 @@
         private System.Windows.Forms.Button digit3Button;
         private System.Windows.Forms.Button divisionButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel8;
     }
 }
 
