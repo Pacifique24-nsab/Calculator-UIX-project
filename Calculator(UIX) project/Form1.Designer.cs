@@ -403,7 +403,7 @@
             // 
             this.resultLabel.AutoSize = true;
             this.resultLabel.Font = new System.Drawing.Font("Century Schoolbook", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultLabel.Location = new System.Drawing.Point(212, 149);
+            this.resultLabel.Location = new System.Drawing.Point(172, 148);
             this.resultLabel.Name = "resultLabel";
             this.resultLabel.Size = new System.Drawing.Size(314, 86);
             this.resultLabel.TabIndex = 5;
@@ -413,7 +413,6 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.textBox1);
@@ -472,7 +471,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel8.Location = new System.Drawing.Point(64, 3);
+            this.panel8.Location = new System.Drawing.Point(1332, 259);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(526, 103);
             this.panel8.TabIndex = 9;
@@ -483,6 +482,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
