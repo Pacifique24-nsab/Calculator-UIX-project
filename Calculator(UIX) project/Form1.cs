@@ -246,5 +246,10 @@ namespace Calculator_UIX__project
             form.Show();
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

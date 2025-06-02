@@ -55,9 +55,9 @@
             this.welcomingTitleLabel = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -267,7 +267,7 @@
             this.clearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.clearButton.Font = new System.Drawing.Font("Century", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.clearButton.Location = new System.Drawing.Point(227, 672);
+            this.clearButton.Location = new System.Drawing.Point(225, 665);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(398, 79);
             this.clearButton.TabIndex = 0;
@@ -422,6 +422,15 @@
             this.panel4.Size = new System.Drawing.Size(660, 585);
             this.panel4.TabIndex = 6;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Teal;
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(67, 585);
+            this.panel5.TabIndex = 7;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -437,15 +446,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(69, 585);
             this.panel6.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Teal;
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(67, 585);
-            this.panel5.TabIndex = 7;
             // 
             // textBox1
             // 
@@ -492,6 +492,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
